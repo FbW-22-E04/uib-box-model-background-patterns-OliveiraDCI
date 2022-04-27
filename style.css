@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: beige;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-pattern {
+  height: 25vh;
+  background-image: url(/images/pattern.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-pattern {
+  height: 25vh;
+  background-image: url(/images/pattern.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  text-align: center;
+  font-size: 4rem;
+  padding: 3rem 6rem;
+  background: rgba(238, 238, 238, 0.144);
+}
+figcaption {
+  text-align: end;
+  font-size: 1.5rem;
+  width: 85vw;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
